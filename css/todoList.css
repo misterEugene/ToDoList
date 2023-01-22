@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  font-family: 'Roboto';
+}
+
+
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 768px;
+  height: 100vh;
+  padding: 0 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todolist-body {
+  flex-grow: 1;
+  padding-bottom: 89px;
+}
+
+.todolist-title {
+  text-align: center;
+  font-size: 35px;
+  color: #1F6946;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.todolist-footer {
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.todolist-title::first-letter {
+  font-size: 55px;
+}
+
+.list {
+  border-top: 3px solid #000;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  border-bottom: 3px solid #000;
+  position: relative;
+  min-height: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 108px;
+}
+
+.item-text {
+  line-height: 1.5;
+  font-size: 18px;
+  align-items: left;
+  max-width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+.footer-wrapper {
+  max-width: 227px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.text-done {
+  color: #1F6946;
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 480px) {
+  .item {
+    flex-direction: row;
+    text-align: start;
+    align-items: flex-end;
+    padding: 24px 30px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+  
+  .item-buttons {
+    display: flex;
+    justify-content: space-between;
+    min-width: 110px;
+    margin-left: 25px;
+  }
+
+  .todolist-title {
+    text-align: left;
+    margin-left: 30px;
+  }
+  
+  
+}

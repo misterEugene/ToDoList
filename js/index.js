@@ -116,10 +116,6 @@ function addItemBtnsEvents() {
       btn.addEventListener('click', () => {
         toDoList.splice(indexItem, 1)
 
-        if (toDoList.length === 0) {
-
-        }
-
         clearList()
         conclusionList(toDoList)
       })
